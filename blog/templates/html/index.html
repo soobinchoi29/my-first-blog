@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>{% load staticfiles %}
+ <html class="no-js">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>
+	Senchimental
+	</title>
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FreeHTML5.co" />-->
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+	
+	<link rel="stylesheet" href="{% static 'css/animate.css'%}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{% static 'css/icomoon.css'%}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css'%}">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="{% static 'css/flexslider.css'%}">
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="{% static 'css/fowl.carousel.min.css'%}">
+	<link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css'%}">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="{% static 'css/style.css'%}">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+	
+	
+	<div id="fh5co-page">
+	<header id="fh5co-header" role="banner">
+		<div class="container">
+			<div class="header-inner">
+				<a href="index">	
+					<img src="{% static 'images/logo.png' %}" style="margin-top: 20px; max-height: 50px">
+				</a>
+				<nav role="navigation">
+					<ul>
+						<li><a href="form">상담</a></li>
+			            <li><a href="analysis">감성분석</a></li>
+			            <li><a href="chatbot">챗봇</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	
+	<div class="container">
+		
+	</div>
+	<aside id="fh5co-hero" class="js-fullheight">
+		<div class="flexslider js-fullheight">
+			<ul class="slides">
+		   	<li style="background-image: url({% static 'images/main.png'%});">		   		
+		   	</li>
+		   	</ul>
+	  	</div>
+	</aside>
+	<div id="fh5co-services-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box">
+					<h2>주요 기능</h2>
+					<p>-----</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 animate-box">
+					<div class="services">
+						<i class="icon-laptop"></i>
+						<div class="desc">
+							<h3>STT</h3>
+							<p>고객의 음성을 STT(Speech to Text)기술을 사용하여 텍스트화한다. Naver Clova Recognization API를 활용한다.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 animate-box">
+					<div class="services">
+						<i class="icon-pie-chart"></i>
+						<div class="desc">
+							<h3>감성 분석</h3>
+							<p>단어마다 긍/부정의 확률을 지정하여 문장에서 단어를 추출해 확률을 분석하는 방법을 활용한다. 후에 감성분석 출력 결과 값과 기존의 학습데이터(기존의 상담 데이터)를 비교하여 자체 감성사전을 구축하는 딥러닝 기술을 활용해 볼 예정이다. </p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 animate-box">
+					<div class="services">
+						<i class="icon-tablet"></i>
+						<div class="desc">
+							<h3>TTS 기반 챗봇</h3>
+							<p>긍정 고객과 상담원의 연결 후 진행되는 상담과정에서도 고객의 감정이 상담 목적과 동떨어진 부정적인 감정으로 분류될 경우 TTS기반의 챗봇 기능을 통해 고객을 응대한다. 안드로이드에서 제공하는 TTS기술을 접목하여 챗봇을 구현한다.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="fh5co-work-section" class="fh5co-light-grey-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box">
+					<h2>제공 서비스</h2>
+					<p> 제공 예정 </p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 animate-box">
+					<a href="#" class="item-grid text-center">
+						<!--<div class="image" style="background-image: url({% static 'images/image_1.jpg'%})"></div>-->
+						<div class="v-align">
+							<div class="v-align-middle">
+								<h3 class="title">고객음성분석</h3>
+								<!--<h5 class="category">Web Application</h5>-->
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 animate-box">
+					<a href="#" class="item-grid text-center">
+						<!--<div class="image" style="background-image: url({% static 'images/image_2.jpg'%})"></div>-->
+						<div class="v-align">
+							<div class="v-align-middle">
+								<h3 class="title">메일분석</h3>
+								<!--<h5 class="category">Web Application</h5>-->
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 animate-box">
+					<a href="#" class="item-grid text-center">
+						<!--<div class="image" style="background-image: url({% static 'images/image_3.jpg'%})"></div>-->
+						<div class="v-align">
+							<div class="v-align-middle">
+								<h3 class="title">댓글 분석</h3>
+								<!--<h5 class="category">Web Application</h5>-->
+							</div>
+						</div>
+					</a>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+	<div class="fh5co-cta" style="background-image: url({% static 'images/slide_2.jpg'%});">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="col-md-12 text-center animate-box">
+				<h3>Thank you</h3>
+				<!--<p><a href="#" class="btn btn-primary btn-outline with-arrow">Get started now! <i class="icon-arrow-right"></i></a></p>-->
+			</div>
+		</div>
+	</div>
+	
+		<footer id="fh5co-footer" role="contentinfo">
+		
+			<div class="container">
+				<div class="col-md-3 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
+					<h3>About Us</h3>
+					<p>덕성여대 컴퓨터학과 센치멘탈팀 </br> 20151050 이지은</br> 20151063 최수빈</br> 20151081 이지은</p>
+				</div>
+					
+				<div class="col-md-12 fh5co-copyright text-center">
+					<p>2017 덕성여대 컴퓨터학과 졸업프로젝트<span> <i class="icon-heart"></i> </span></p>	
+				</div>	
+			</div>
+		</footer>
+	</div>
+	
+		<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Owl Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+	
+	</body>
+</html>
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>{% load staticfiles %}
+<html lang="en">
+<head>
+  <title>접수 내역</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  
+  <link rel="shortcut icon" href="favicon.ico">
+  
+  <link rel="stylesheet" href="{% static 'css/animate.css'%}">
+  <!-- Icomoon Icon Fonts-->
+  <link rel="stylesheet" href="{% static 'css/icomoon.css'%}">
+  <!-- Bootstrap  -->
+  <link rel="stylesheet" href="{% static 'css/bootstrap.css'%}">
+  <!-- Flexslider  -->
+  <link rel="stylesheet" href="{% static 'css/flexslider.css'%}">
+  <!-- Owl Carousel  -->
+  <link rel="stylesheet" href="{% static 'css/fowl.carousel.min.css'%}">
+  <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css'%}">
+  <!-- Theme style  -->
+  <link rel="stylesheet" href="{% static 'css/style.css'%}">
+ 
+</head>
+<body>
+<header id="fh5co-header" role="banner">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index">  
+          <img src="{% static 'images/logo.png' %}" style="margin-top: 20px; max-height: 50px">
+        </a>
+        <nav role="navigation">
+          <ul>
+            <li><a href="form">상담</a></li>
+                  <li><a href="analysis">감성분석</a></li>
+                  <li><a href="chatbot">챗봇</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <td><B>이름</B></td>
+            <td><B>연락처</B></td>
+            <td><B>상담사유</B></td>
+        </tr>
+        </thead>
+        <tbody style="color: black;">
+            {% for customer in customers %}
+            <tr>
+                <td>{{customer.name}}</td>
+                <td> {{customer.phoneNum}} </td>
+                <td class="reason"> {{customer.reason}} </td>
+             </tr>
+            {% endfor %}
+        <tbody>
+    </table>
+</body>
+
+<!--<a href = "names/{{customer.name}}/">-->

@@ -1,0 +1,73 @@
+<!DOCTYPE html>{% load staticfiles %}
+<html lang="en"> 
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Senchimental</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  
+  <link rel="stylesheet" href="{% static 'css/animate.css'%}">
+  <!-- Icomoon Icon Fonts-->
+  <link rel="stylesheet" href="{% static 'css/icomoon.css'%}">
+  <!-- Bootstrap  -->
+  <link rel="stylesheet" href="{% static 'css/bootstrap.css'%}">
+  <!-- Flexslider  -->
+  <link rel="stylesheet" href="{% static 'css/flexslider.css'%}">
+  <!-- Owl Carousel  -->
+  <link rel="stylesheet" href="{% static 'css/fowl.carousel.min.css'%}">
+  <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css'%}">
+  <!-- Theme style  -->
+  <link rel="stylesheet" href="{% static 'css/style.css'%}">
+  <link rel="stylesheet" href="{% static 'css/form.css'%}">
+</head>
+
+<body>
+
+  <header id="fh5co-header" role="banner">
+    <div class="container">
+      <div class="header-inner">
+       <a href="index"> 
+          <img src="{% static 'images/logo.png' %}" style="margin-top: 20px; max-height: 50px">
+        </a>
+          <nav role="navigation">
+            <ul>
+              <li><a href="form">상담</a>
+              </li>
+              <li><a href="analysis">감성분석</a></li>
+              <li><a href="chatbot">챗봇</a></li>
+              <!--<li class="cta"><a href="#">Get started</a></li>-->
+            </ul>
+          </nav>
+      </div>
+    </div>
+  </header>
+
+    <div class="login">
+      <!--<img src="{% static 'img/logo.png' %}" style="width:199px;height:59px">-->
+      <h3>FORM</h3>
+      <form action ="#" method="post" class="post-form">
+      	{%csrf_token%} {{form.as_p}}
+        <button type="submit" class="save ntm ntm_default">Save</button>
+      </form>
+    </div>
+
+  <footer id="fh5co-footer" role="contentinfo">
+    <div class="container">
+      <div class="col-md-3 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
+        <h3>About Us</h3>
+        <p>덕성여대 컴퓨터학과  </br> 
+          20151050 이지은</br> 
+          20151063 최수빈</br> 
+          20151081 이지은
+        </p>
+      </div>
+      
+      <div class="col-md-12 fh5co-copyright text-center">
+        <p>2017 덕성여대 컴퓨터학과 졸업프로젝트<span> <i class="icon-heart"></i> </span></p>  
+      </div>      
+    </div>
+  </footer>
+
+</body>
+</html>
